@@ -1,0 +1,11 @@
+.crawlingResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crawlingButton{
+    
+    background-color: #c0eb75;
+    
+}

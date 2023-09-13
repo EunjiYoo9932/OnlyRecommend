@@ -23,16 +23,16 @@ function RecommendResultPage() {
     };
 
     useEffect(() => {
-        // const fetchResult = async () => {
-        //     try {
-        //         const response = await axios.get("http://localhost:4000/comments");
-        //         //
-        //         setResult(response.data);
-        //         console.log(result);
-        //     } catch (error) {
-        //         console.error('Error fetching result:', error);
-        //     }
-        // };
+        const fetchResult = async () => {
+            try {
+                const response = await axios.get("http://localhost:4000/comments");
+                //
+                setResult(response.data);
+                console.log(result);
+            } catch (error) {
+                console.error('Error fetching result:', error);
+            }
+        };
         const plantsData = async () => {
             try {
                 const response = await axios.get("http://localhost:4000/plantsData");
@@ -44,7 +44,7 @@ function RecommendResultPage() {
                 console.error('Error fetching additional data:', error);
             }
         };
-        //fetchResult();
+        fetchResult();
         plantsData();
     }, []);
 
