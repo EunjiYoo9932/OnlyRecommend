@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './CrawlingResult.css';
+import './CrawlingResultPage.css';
 //api 맞추기
 
 function CrawlingResultPage() {
@@ -35,7 +35,7 @@ function CrawlingResultPage() {
       await axios.post('크롤링하려는 단어 넣는 api', { searchName: searchKeyword });
       //크롤링하려는 단어 넣는 api
 
-      navigate('/CrawlingResult');
+      navigate('/CrawlingResultPage');
     } catch (error) {
       console.error(error);
     }

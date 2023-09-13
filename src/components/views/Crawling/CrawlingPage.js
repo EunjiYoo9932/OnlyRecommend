@@ -26,7 +26,7 @@ function CrawlingPage() {
 
   const onSubmit = async (e) => {
     searchName();
-    navigate('/CrawlingResult');
+    navigate('/CrawlingResultPage');
   }
         
   return(
@@ -47,4 +47,4 @@ function CrawlingPage() {
   )
 }
 
-export default CrawlingPage
+export default CrawlingPage;
