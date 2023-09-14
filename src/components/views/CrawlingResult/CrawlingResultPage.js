@@ -20,10 +20,11 @@ function CrawlingResultPage() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('크롤링 검색결과api');
+      const response = await axios.get("http://localhost:4000/crawlingData");
       //크롤링 검색 결과 받는 api
 
       setEntities(response.data);
+      console.log(response.data)
     } catch (error) {
       console.error(error);
     }
@@ -32,7 +33,7 @@ function CrawlingResultPage() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('크롤링하려는 단어 넣는 api', { searchName: searchKeyword });
+      await axios.post("http://localhost:4000/comments", { searchName: searchKeyword });
       //크롤링하려는 단어 넣는 api
 
       navigate('/CrawlingResultPage');
@@ -61,9 +62,12 @@ function CrawlingResultPage() {
       <div className="entity-list">
         {entities.map((entity, index) => (
           <div className="entity" key={index}>
-            <img className="entity-image" src={entity.image} alt={entity.storeName} />
+            <a href={entity.storeLink}>
+              <img className="entity-image" src={entity.imageUrl} alt={entity.storeName} />
+            </a>
             <div className="entity-content">
               <h5>{entity.storeName}</h5>
+              <h5>{entity.storeTitle}</h5>
               <p>가격: {entity.price}</p>
             </div>
           </div>

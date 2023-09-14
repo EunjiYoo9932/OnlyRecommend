@@ -3,6 +3,9 @@ import axios from 'axios';
 import './RecommendResultPage.css';
 import Modal from 'react-modal';
 import { useNavigate  } from 'react-router-dom';
+
+// axios.defaults.withCredentials = true;
+
 function RecommendResultPage() {
 
     const [result, setResult] = useState(['']);
@@ -23,19 +26,10 @@ function RecommendResultPage() {
     };
 
     useEffect(() => {
-        const fetchResult = async () => {
-            try {
-                const response = await axios.get("http://localhost:4000/comments");
-                //
-                setResult(response.data);
-                console.log(result);
-            } catch (error) {
-                console.error('Error fetching result:', error);
-            }
-        };
+
         const plantsData = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/plantsData");
+                const response = await axios.get("/api/resulting");
                 //백엔드랑 맞춰야 되는 부분
                 
                 setSelectedPlants(response.data);
@@ -44,7 +38,6 @@ function RecommendResultPage() {
                 console.error('Error fetching additional data:', error);
             }
         };
-        fetchResult();
         plantsData();
     }, []);
 
@@ -52,17 +45,17 @@ function RecommendResultPage() {
         <div className='recommend'>      
             <div>
                 <ul className='recommendResultul'>
-                    <li className='recommendResultli'>온도 : {result[0].temperature}</li>    
-                    <li className='recommendResultli'>조도 : {result[0].light}</li>
-                    <li className='recommendResultli'>물 : {result[0].water}</li>
-                    <li className='recommendResultli'>레벨 : {result[0].level}</li>
+                    <li className='recommendResultli'>온도 : {selectedPlants[0].plantsTemperature}</li>
+                    <li className='recommendResultli'>조도 : {selectedPlants[0].plantsLight}</li>
+                    <li className='recommendResultli'>물 : {selectedPlants[0].plantsWater}</li>
+                    <li className='recommendResultli'>레벨 : {selectedPlants[0].plantsLevel}</li>
                 </ul>
             </div>
 
             
-            {result.slice(1).map((comments) => (
-                <><div className='recommendResultWi' key={comments.id}>{comments.id}위</div>
-                <div className='recommendResultRanking' key={comments.id} onClick={() => openModal(comments.plantsName)}>{comments.plantsName}</div></>
+            {selectedPlants.map((comments, index) => (
+                <><div className='recommendResultWi' key={comments.index}>{index+1}위</div>
+                <div className='recommendResultRanking' key={comments.index} onClick={() => openModal(comments.plantsName)}>{comments.plantsName}</div></>
             ))}
             <button className='recommendResultButton' onClick={() => navigate('/RecommendPage')}>질문지로</button>
 

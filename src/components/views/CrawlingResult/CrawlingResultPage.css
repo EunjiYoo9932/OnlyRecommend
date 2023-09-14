@@ -1,11 +1,4 @@
-.crawlingResult{
-    display: flex;
-}
 
-.crawlingForm{
-    width: 50%;
-    text-align: center;
-}
 
 .entity-list {
     display: flex;
@@ -17,8 +10,11 @@
 
 .entity {
     display: flex;
+    width: 100%;
     margin-bottom: 20px;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: solid rgba(0, 0, 0, .12);
 }
 
 .entity-content {

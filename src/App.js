@@ -7,6 +7,8 @@ import Header from './components/views/Header/Header';
 import Footer from './components/views/Footer/Footer';
 import RecommendPage from './components/views/RecommendPage/RecommendPage';
 import RecommendResultPage from './components/views/RecommendResultPage/RecommendResultPage';
+import CrawlingPage from './components/views/Crawling/CrawlingPage';
+import CrawlingResultPage from './components/views/CrawlingResult/CrawlingResultPage';
 
 function App() {
   return (
@@ -18,8 +20,11 @@ function App() {
             <div id="main-content" className="flex-1">
               <Routes>
                 <Route path='/' element={<RecommendPage/>}></Route>
-                <Route path='RecommendPage' element={<RecommendPage/>}></Route>
-                <Route path='RecommendResultPage' element={<RecommendResultPage/>}></Route>
+                <Route path='/RecommendPage' element={<RecommendPage/>}></Route>
+                <Route path='/RecommendResultPage' element={<RecommendResultPage/>}></Route>
+                <Route path='/CrawlingPage' element={<CrawlingPage/>}></Route>
+                <Route path='/CrawlingResultPage' element={<CrawlingResultPage/>}></Route>
+                
               </Routes>
             </div>
             <Footer/>

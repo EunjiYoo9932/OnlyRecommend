@@ -5,9 +5,6 @@ import './RecommendPage.css';
 import { useNavigate } from 'react-router-dom';
 
 
-const SERVER_URL = 'http://localhost:3002/api/submitResults';
-//백엔드랑 api 맞춰야 되는 부분
-
 function RecommendPage() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const navigate = useNavigate();
@@ -15,18 +12,18 @@ function RecommendPage() {
     const currentAnswers = qnaList[currentQuestionIndex].a;
 
     const [totalAnswer, setTotalAnswer] = useState({
-        answerTemperature: 0,
-        answerLight: 0,
-        answerWater: 0,
         answerLevel: 0,
+        answerLight: 0,
+        answerTemperature: 0,
+        answerWater: 0,
     });
 
     const handleAnswerSelection = (answer) => {
         const updatedAnswer = {
-        answerTemperature: totalAnswer.answerTemperature + (answer.answerTemperature || 0),
-        answerLight: totalAnswer.answerLight + (answer.answerLight || 0),
-        answerWater: totalAnswer.answerWater + (answer.answerWater || 0),
-        answerLevel: totalAnswer.answerLevel + (answer.answerLevel || 0),
+            answerLevel: totalAnswer.answerLevel + (answer.answerLevel || 0),
+            answerLight: totalAnswer.answerLight + (answer.answerLight || 0),
+            answerTemperature: totalAnswer.answerTemperature + (answer.answerTemperature || 0),
+            answerWater: totalAnswer.answerWater + (answer.answerWater || 0),
         };
 
         setTotalAnswer(updatedAnswer);
@@ -40,7 +37,8 @@ function RecommendPage() {
     };
 
     const sendResultsToBackend = (answer) => {
-        axios.post(SERVER_URL, answer)
+        console.log(answer);
+        axios.post("/api/question", answer)
         .then((response) => {
             console.log('Server response:', response.data);
         })
