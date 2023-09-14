@@ -15,12 +15,13 @@ const Header = () => {
             <Container>
                 <Navbar.Brand style={{ fontSize: '22px' }} as={Link} to="/">
                     <img className="headerGrupImg" alt="grupImg" src="image/GRUP로고.png" /></Navbar.Brand>
+                    <img className="headerJOONGBUImg" src="image/중부대로고.jpg" alt='중부대로고' />
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto mx-auto">
                         <Nav.Link style={{ fontSize: '20px', color:'black'}}href="#features">HOME</Nav.Link>
                         <Nav.Link style={{ fontSize: '20px', color:'black' }}as={Link} to="/RecommendPage">AI 식물 추천</Nav.Link>
-                        <Nav.Link style={{ fontSize: '20px', color:'black' }}as={Link} to="/Introduce">팀원소개</Nav.Link>
+                        <Nav.Link style={{ fontSize: '20px', color:'black' }}as={Link} to="/IntroducePage">팀원소개</Nav.Link>
                         <Nav.Link style={{ fontSize: '20px', color:'black' }}as={Link} to="/CrawlingPage">식물상점</Nav.Link>
                         <NavDropdown title={<span style={{ fontSize: '20px', color: '#c0eb75' }}>게시판</span>} id="collasible-nav-dropdown">
                             <NavDropdown.Item style={{ color: 'black' }} href="#action/3.1">고민게시판</NavDropdown.Item>
