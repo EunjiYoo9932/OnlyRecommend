@@ -26,8 +26,6 @@ function Introduce() {
 
   return (
     <div className="team-container">
-      <h1>중부대학교</h1>
-      <h2>정보보호학전공</h2>
 
       <div className="team-grid">
         {teamMembers.map((member, index) => (

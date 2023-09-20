@@ -29,9 +29,10 @@ function RecommendResultPage() {
 
         const plantsData = async () => {
             try {
-                const response = await axios.get("/api/resulting");
+                const response = await axios.get("http://localhost:4000/plantsData");
                 //백엔드랑 맞춰야 되는 부분
                 
+
                 setSelectedPlants(response.data);
                 console.log(response.data);
             } catch (error) {
@@ -41,14 +42,52 @@ function RecommendResultPage() {
         plantsData();
     }, []);
 
+    function getTemperatureText(temperature) {
+        return `식물에 적절한 온도는 ${temperature}도 입니다.`
+    }
+
+    function getLightText(light) {
+        if (light >= 31) {
+            return "양지";
+        } else if (light >= 21) {
+            return "반양지";
+        } else if (light >= 11 ) {
+            return "반음지";
+        } else{
+            return "음지";
+        }
+    }
+
+    function getWaterText(water) {
+        if (water >= 31) {
+            return "겉흙이 마르면 물을 듬뿍 주세요.";
+        } else if (water >= 21) {
+            return "흙을 축축하게 유지해주세요.";
+        } else if (water >= 11) {
+            return "흙을 촉촉하게 유지해주세요.";
+        } else {
+            return "건조에 강합니다. 흙이 말랐을때 주세요."
+        }
+    }
+
+    function getLevelText(level) {
+        if (level >= 28) {
+            return "상";
+        } else if (level >= 14) {
+            return "중";
+        } else {
+            return "하";
+        }
+    }
+
     return (
         <div className='recommend'>      
             <div>
                 <ul className='recommendResultul'>
-                    <li className='recommendResultli'>온도 : {selectedPlants[0].plantsTemperature}</li>
-                    <li className='recommendResultli'>조도 : {selectedPlants[0].plantsLight}</li>
-                    <li className='recommendResultli'>물 : {selectedPlants[0].plantsWater}</li>
-                    <li className='recommendResultli'>레벨 : {selectedPlants[0].plantsLevel}</li>
+                    <li className='recommendResultli'>온도 : {getTemperatureText(selectedPlants[0].plantsTemperature)}</li>
+                    <li className='recommendResultli'>조도 : {getLightText(selectedPlants[0].plantsLight)}</li>
+                    <li className='recommendResultli'>물 : {getWaterText(selectedPlants[0].plantsWater)}</li>
+                    <li className='recommendResultli'>난이도 : {getLevelText(selectedPlants[0].plantsLevel)}</li>
                 </ul>
             </div>
 
@@ -60,25 +99,34 @@ function RecommendResultPage() {
             <button className='recommendResultButton' onClick={() => navigate('/RecommendPage')}>질문지로</button>
 
 
-            <Modal className='recommendResultModal' isOpen={modalIsOpen}>
+            <Modal className='recommendResultModal' isOpen={modalIsOpen} >
                 {/* <div>Selected Plant: {selectedPlants.plantsName}</div> */}
                 {selectedPlants.map((plant) => {
                     if (plant.plantsName === selectedPlantName) {
                         return (
                             <div key={plant.id}>
                             <ul className='plantExplain'>
-                                <li className='plantExplainTitle'>식물명</li>
+                                <li className='plantExplainTitle'></li>
                                 <li>{plant.plantsName}</li>
-                                <li className='plantExplainTitle'>사진</li>
-                                <li>{plant.plantsPic}</li>
-                                <li className='plantExplainTitle'>난이도</li>
-                                <li >{plant.plantsLevel}</li>
+                                <li className='plantExplainTitle'></li>
+                                <li><img src={plant.plantsPic} alt='plantImg' width={100} height={100}></img></li>
+                                <li className='plantExplainTitle'>온도</li>
+                                <li>{getTemperatureText(plant.plantsTemperature)}</li>
+                                <li className='plantExplainTitle'>조도</li>
+                                <li>{getLightText(plant.plantsLight)}</li>
                                 <li className='plantExplainTitle'>물</li>
-                                <li>{plant.plantsWater}</li>
+                                <li>{getWaterText(plant.plantsWater)}</li>
+                                <li className='plantExplainTitle'>난이도</li>
+                                <li >{getLevelText(plant.plantsLevel)}</li>
                                 <li className='plantExplainTitle'>효과</li>
                                 <li>{plant.plantsEffect}</li>
                                 <li className='plantExplainTitle'>주의점</li>
                                 <li>{plant.plantsNotice}</li>
+                                {/*<input className='crawlingButton'*/}
+                                {/*       type="submit"*/}
+                                {/*       onClick={onSubmit}*/}
+                                {/*/>*/}
+                                {/*<button className='resultCrawlingButton' onClick={resultCrawling(plant.plantsName)}>판매정보 보기</button>*/}
                             </ul>
                             </div>
                         );
@@ -90,5 +138,54 @@ function RecommendResultPage() {
         </div>
     );
 }
+//     return (
+//         <div className='recommend'>      
+//             <div>
+//                 <ul className='recommendResultul'>
+//                     <li className='recommendResultli'>온도 : {selectedPlants[0].temperature}</li>
+//                     <li className='recommendResultli'>조도 : {selectedPlants[0].light}</li>
+//                     <li className='recommendResultli'>물 : {selectedPlants[0].water}</li>
+//                     <li className='recommendResultli'>레벨 : {selectedPlants[0].level}</li>
+//                 </ul>
+//             </div>
+
+            
+//             {selectedPlants.map((comments, index) => (
+//                 <><div className='recommendResultWi' key={comments.index}>{index+1}위</div>
+//                 <div className='recommendResultRanking' key={comments.index} onClick={() => openModal(comments.plantsName)}>{comments.plantsName}</div></>
+//             ))}
+//             <button className='recommendResultButton' onClick={() => navigate('/RecommendPage')}>질문지로</button>
+
+
+//             <Modal className='recommendResultModal' isOpen={modalIsOpen}>
+//                 {/* <div>Selected Plant: {selectedPlants.plantsName}</div> */}
+//                 {selectedPlants.map((plant) => {
+//                     if (plant.plantsName === selectedPlantName) {
+//                         return (
+//                             <div key={plant.id}>
+//                             <ul className='plantExplain'>
+//                                 <li className='plantExplainTitle'>식물명</li>
+//                                 <li>{plant.plantsName}</li>
+//                                 <li className='plantExplainTitle'>사진</li>
+//                                 <li>{plant.plantsPic}</li>
+//                                 <li className='plantExplainTitle'>난이도</li>
+//                                 <li >{plant.plantsLevel}</li>
+//                                 <li className='plantExplainTitle'>물</li>
+//                                 <li>{plant.plantsWater}</li>
+//                                 <li className='plantExplainTitle'>효과</li>
+//                                 <li>{plant.plantsEffect}</li>
+//                                 <li className='plantExplainTitle'>주의점</li>
+//                                 <li>{plant.plantsNotice}</li>
+//                             </ul>
+//                             </div>
+//                         );
+//                         }
+//                         return null;
+//                     })}
+//                 <button className='modalCloseButton' onClick={closeModal}>close</button>
+//             </Modal>
+//         </div>
+//     );
+// }
 
 export default RecommendResultPage;

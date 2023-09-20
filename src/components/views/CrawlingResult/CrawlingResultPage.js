@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './CrawlingResultPage.css';
-import CarouselPage from '../Carousel/CarouselPage';
 //api 맞추기
 
 function CrawlingResultPage() {
@@ -10,8 +9,6 @@ function CrawlingResultPage() {
   const [searchKeyword, setSearchKeyword] = useState('');
   const [entities, setEntities] = useState([]);
   const navigate = useNavigate();
-
-  const [isSearching, setIsSearching] = useState(false);
   const handleInputChange = (e) => {
     setSearchKeyword(e.target.value);
   }
@@ -47,7 +44,6 @@ function CrawlingResultPage() {
   return (
 
     <div className='crawlingResult'>
-      <CarouselPage/>
       <form className='crawlingForm'>
         <input
           className='crawlingInput'
@@ -59,7 +55,6 @@ function CrawlingResultPage() {
           className='crawlingButton'
           type="submit"
           onClick={onSubmit}
-          value={isSearching ? "검색 중..." : "검색"}
         />
       </form>
 

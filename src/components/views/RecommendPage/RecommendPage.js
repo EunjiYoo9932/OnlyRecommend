@@ -38,7 +38,7 @@ function RecommendPage() {
 
     const sendResultsToBackend = (answer) => {
         console.log(answer);
-        axios.post("/api/question", answer)
+        axios.post("http://localhost:4000/comments", answer)
         .then((response) => {
             console.log('Server response:', response.data);
         })
@@ -55,7 +55,7 @@ function RecommendPage() {
         <ul className='recommendAnswerList'>
             {currentAnswers.map((answer, index) => (
             <li className='recommendAnswer' key={index}>
-                <button onClick={() => handleAnswerSelection(answer)}>{answer.answer}</button>
+                <button className='answerButton' onClick={() => handleAnswerSelection(answer)}>{answer.answer}</button>
             </li>
             ))}
         </ul>

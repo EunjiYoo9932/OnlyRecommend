@@ -1,17 +1,35 @@
 import React from 'react'
-import CarouselPage from '../Carousel/CarouselPage';
-import CrawlingStartPage from '../Crawling/CrawlingStartPage';
-import CrawlingPage from '../Crawling/CrawlingPage';
+import { ReactComponent as Ball } from '../../../assets/images/ball.svg';
+
+import { ReactComponent as Ball2 } from '../../../assets/images/ball2.svg';
+import './MainPage.css';
 function MainPage() {
   return (
-    <div className="mainPageOption">
-      <CarouselPage />
-      <div className="leftColumn">
-        <CrawlingStartPage />
+    <div className='mainPageOption'>
+      
+      <img className="mainImg" alt="mainImg" src="image/메인사진.png" />
+
+      <div className='bigString'>
+        ABOUT
       </div>
-      <div className="rightColumn">
-        <CrawlingPage />
+
+
+      <Ball width='100' fill="#2CAF92"/>
+      <Ball2 width='1500px' fill="#72D086"/>
+
+      
+      <Ball fill="#72D086"/>
+      <div className='mainRecommend'>
+        추천 소개 공간
+      </div>      
+      
+      <div className='mainCrawling'>
+        크롤링 소개 공간
       </div>
+
+
+    
+
     </div>
   );
 }

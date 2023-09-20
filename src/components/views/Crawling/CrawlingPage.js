@@ -38,6 +38,7 @@ function CrawlingPage() {
           value={searchKeyword}
           onChange={handleInputChange}
         />
+        
         <input className='crawlingButton' 
           type="submit"
           onClick={onSubmit} 

@@ -1,0 +1,73 @@
+#nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 10PX;
+    font-family: 'Merriweather'
+}
+
+.nav-button{
+    border: 1px solid #dadada;
+    margin: 5px 20px 10px 20px;
+    border-radius: 14px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+}
+.nav-button:hover{
+    background-color: #72D086;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .12);
+}
+
+#nav li {
+    list-style: none;
+}
+
+.link-style{
+    text-decoration: none;
+    color: black;
+}
+
+.link-style:hover{
+    color: white;
+}
+/* #nav{
+    text-decoration: none;
+    
+}
+#nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+#nav li {
+    text-decoration: none;
+    padding :15px;
+}
+#nav a{
+    text-decoration: none;
+    text-align: center;
+}
+#nav a:visited{
+    color: black;
+}
+
+#nav a div{
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+}
+#nav a div::after{
+    content: '';
+    display: inline-block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.83cec6a7.png);
+    background-size: 435px 414px;
+    background-position: -250px -90px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+#nav li:nth-of-type(2) a div::after{
+    background-position: -90px -209px;
+} */
