@@ -1,23 +1,101 @@
 .mainPageOption {
     display: flex;
     flex-direction: column;
+/*     
+    background-color: #E9F6CF; */
 }
 
 .mainImg{
     width: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
-.mainRecommend{
-    background-color: #E9F6CF;
+.mainExplain{
+    padding: 15px 15px 30px 15px;
 }
 
-.mainCrawling{
-    background-color: #00525F;
-}
+
 
 .bigString{
     font-family: 'Merriweather', serif;
-    font-size: 80px;
+    font-size: 65px;
     margin-top: 10px;
+    color: black;
+}
+
+.mainExplain p{
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    font-size: 60px;
+    color: #008D8E;
+}
+
+.mainExplain div{
+    
+    font-family: 'Merriweather', ;
+    font-weight: 400;
+    font-size: 25px;
+    color: #008D8E;
+}
+
+.mainIcon{
+    margin-bottom:30px ;
+}
+
+.mainRecommend{
+    /* background-color: white; */
+    
+    background-color: #E9F6CF;
+    color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.mainRecommend ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+
+
+}
+
+.mainRecommend li{
+    border-radius:50% ;
+    width: 110px;
+    height: 110px;
+    padding-top: 24px;
+    margin: 30px 20px 20px 20px;
+    font-family: 'Merriweather';
+    font-size: 20px;
+}
+
+.mainRecommend li:nth-child(1){
+    background-color: #008D8E;
+}
+
+.mainRecommend li:nth-child(3){
+    background-color: #008D8E;
+}
+
+.mainRecommend li:nth-child(5){
+    background-color: #008D8E;
+}
+.mainRecommend p{
+    margin: 0;
+}
+
+/* .mainRecommend span{
+    color: white;
+    background-color: #2F4858;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 15px;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+} */
+
+.mainRecommend li:nth-child(7){
+    background-color: #2F4858;
 }

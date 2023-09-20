@@ -39,6 +39,9 @@ function RecommendPage() {
     const sendResultsToBackend = (answer) => {
         console.log(answer);
         axios.post("http://localhost:4000/comments", answer)
+        
+        //
+        //백엔드
         .then((response) => {
             console.log('Server response:', response.data);
         })
@@ -49,19 +52,19 @@ function RecommendPage() {
 
     return (
         <div className='recommend'>
-        <div className='questionNumber'> Q.{currentQuestionIndex + 1}</div>
-        <div className='recommendQuestion'>{currentQuestion}</div>
+            <div className='questionNumber'> Q.{currentQuestionIndex + 1}</div>
+            <div className='recommendQuestion'>{currentQuestion}</div>
 
-        <ul className='recommendAnswerList'>
-            {currentAnswers.map((answer, index) => (
-            <li className='recommendAnswer' key={index}>
-                <button className='answerButton' onClick={() => handleAnswerSelection(answer)}>{answer.answer}</button>
-            </li>
-            ))}
-        </ul>
-        {currentQuestionIndex === qnaList.length - 1 && (
-            <button className="submitButton" onClick={() => navigate('/RecommendResultPage')}>제출하기</button>
-        )}
+            <ul className='recommendAnswerList'>
+                {currentAnswers.map((answer, index) => (
+                <li className='recommendAnswer' key={index}>
+                    <button className='answerButton' onClick={() => handleAnswerSelection(answer)}>{answer.answer}</button>
+                </li>
+                ))}
+            </ul>
+            {currentQuestionIndex === qnaList.length - 1 && (
+                <button className="submitButton" onClick={() => navigate('/RecommendResultPage')}>제출하기</button>
+            )}
         </div>
     );
 }

@@ -11,7 +11,6 @@ import Footer from './components/views/Footer/Footer';
 import RecommendStartPage from './components/views/RecommendPage/RecommendStartPage';
 import RecommendPage from './components/views/RecommendPage/RecommendPage';
 import RecommendResultPage from './components/views/RecommendResultPage/RecommendResultPage';
-import CrawlingStartPage from './components/views/Crawling/CrawlingStartPage';
 import CrawlingPage from './components/views/Crawling/CrawlingPage';
 import CrawlingResultPage from './components/views/CrawlingResult/CrawlingResultPage';
 import IntroducePage from './components/views/Introduce/IntroducePage';
@@ -33,7 +32,6 @@ function App() {
                 <Route path='RecommendStartPage' element={<RecommendStartPage/>}></Route>
                 <Route path='/RecommendPage' element={<RecommendPage/>}></Route>
                 <Route path='/RecommendResultPage' element={<RecommendResultPage/>}></Route>
-                <Route path='/CrawlingStartPage' element={<CrawlingStartPage/>}></Route>
                 <Route path='/CrawlingPage' element={<CrawlingPage/>}></Route>
                 <Route path='/CrawlingResultPage' element={<CrawlingResultPage/>}></Route>
                 <Route path='/CarouselPage' element={<CarouselPage/>}></Route>
