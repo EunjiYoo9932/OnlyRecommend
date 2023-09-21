@@ -13,8 +13,8 @@
     font-size: 20px;
     color: #c0eb75;
 }
-.recommendResultRanking{
-
+.recommendResultRanking:active{
+    text-decoration: underline;
 }
 .recommendResultButton{
     margin-top: 10px;
