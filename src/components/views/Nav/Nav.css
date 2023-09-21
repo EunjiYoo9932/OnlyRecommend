@@ -7,15 +7,15 @@
 
 .nav-button{
     border: 1px solid #dadada;
-    margin: 5px 20px 10px 20px;
-    border-radius: 14px;
+    margin: 15px 20px 10px 20px;
+    border-radius: 50px;
     width: 150px;
     height: 50px;
     font-weight: bold;
     background-color: white;
 }
 .nav-button:hover{
-    background-color: #008D8E;
+    background-color: #1E697A;
     box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .12);
     color: white;
 }

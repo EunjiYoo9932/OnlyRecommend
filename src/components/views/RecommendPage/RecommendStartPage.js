@@ -12,8 +12,8 @@ function RecommendStartPage() {
   };
 
   return (
-    <div className="crawlingStart">
-      <div className="crawlingStartMain">
+    <div className="recommendStart">
+      <div className="recommendStartMain">
         <div className="recommendIconContainer">
           {/* 아이콘을 감싸는 요소 */}
           <PiPottedPlantDuotone size={100} />
@@ -27,7 +27,7 @@ function RecommendStartPage() {
             사용자에게 가장 어울리는 식물을 추천해드립니다!
           </p>
           </div>
-        <button className="crawlingStartButton" onClick={onSubmit}>
+        <button className="recommendStartButton" onClick={onSubmit}>
           추천시작하기
         </button>
       </div>
