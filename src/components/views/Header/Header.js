@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="/">
-        <img className="headerGrupImg" alt="grupImg" src="image/GRUP로고.png" />
+        <img className="headerGrupImg" alt="grupImg" src="image/로고2.jpg" />
       </Link>
       <div className="header-button">
         <Link to="/LoginPage">

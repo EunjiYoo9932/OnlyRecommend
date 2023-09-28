@@ -1,65 +1,53 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import { LuSprout } from "react-icons/lu";
+import { GoHomeFill } from "react-icons/go";
+import { MdRecommend } from 'react-icons/md';
+import { MdLocalGroceryStore } from 'react-icons/md';
+import { BsFillPersonFill } from 'react-icons/bs';
 function Nav() {
   return (
     <nav id="nav">
-      {/* <ul id="navId">
-        <li>
-          <a href="">
-            <div></div>
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div></div>
-            <span>식물상점</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div></div>
-            <span>식물추천</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div></div>
-            <span>게시판</span>
-          </a>
-        </li>
-      </ul> */}
-
-      <button className="nav-button">
-        <Link to="/" className="link-style">
+      <Link to="/" className="link-style">
+        <button className="nav-button">
           <div className="NavIconContainer">
             {/* 아이콘을 감싸는 요소 */}
-            <LuSprout size={20} />
+            <GoHomeFill size={22} />
+          </div>
+          <li>Home</li>
+        </button>
+      </Link>
+
+      <Link to="/RecommendStartPage" className="link-style">
+        <button className="nav-button">
+          <div className="NavIconContainer">
+            {/* 아이콘을 감싸는 요소 */}
+            <MdRecommend size={30} />
           </div>
           
-          <li>Home</li>
-        </Link>
-      </button>
-
-      <button className="nav-button">
-        <Link to="/RecommendStartPage" className="link-style">
-          <li>추천시스템</li>
-        </Link>
-      </button>
-
-      <button className="nav-button">
-        <Link to="/CrawlingPage" className="link-style">
+        <li>추천시스템</li>
+        </button>
+      </Link>
+      
+      <Link to="/CrawlingPage" className="link-style">
+        <button className="nav-button">
+        <div className="NavIconContainer">
+            {/* 아이콘을 감싸는 요소 */}
+            <MdLocalGroceryStore size={25} />
+          </div>
           <li>식물상점</li>
-        </Link>
-      </button>
+        </button>
+      </Link>
 
-      <button className="nav-button">
-        <Link to="/" className="link-style">
-          <li>게시판</li>
-        </Link>
-      </button>
+      <Link to="/IntroducePage" className="link-style">
+        <button className="nav-button">
+        <div className="NavIconContainer">
+            {/* 아이콘을 감싸는 요소 */}
+            <BsFillPersonFill size={25} />
+          </div>
+          <li>팀원소개</li>
+        </button>
+      </Link>
     </nav>
   );
 }

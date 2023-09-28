@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./IntroducePage.css";
+import { BsGithub } from 'react-icons/bs';
 function Introduce() {
   const teamMembers = [
     {
@@ -33,7 +34,8 @@ function Introduce() {
             <h2>{member.name}</h2>
             <p>{member.role}</p>
             <a href={member.github} target="_blank" rel="noopener noreferrer">
-              GitHub
+              GitHub 
+              <BsGithub/>
             </a>
           </div>
         ))}

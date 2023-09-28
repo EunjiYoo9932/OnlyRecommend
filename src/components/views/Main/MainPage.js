@@ -21,8 +21,13 @@ function MainPage() {
       <Ball fill="#72D086"/> */}
       <div className="mainExplain">
         {/* <div className='mainRecommend'> */}
-        <p>1</p>
-        <div>간단한 설문조사로 식물 육성 환경/주변 환경과 취향 분석</div>
+        <p>몇가지 응답을 통해</p>
+        <p>당신의 생활환경과 관심사에 맞춰 최적화된 식물을 찾아드립니다 </p>
+        <p>반려 식물이 집안이나 사무실 분위기를 더 활기차게 만들어 주어</p>
+        <p>일상에 건강하고 긍정적인 영향을 드립니다</p>
+        <p>이제 새로운 반려식물을 찾아드립니다</p>
+        <PiPlant size={50} color="3E4A3D" />
+        {/* <div>간단한 설문조사로 식물 육성 환경/주변 환경과 취향 분석</div>
 
         <div className="mainIcon">
           <GiArchiveResearch size={50} />
@@ -44,36 +49,41 @@ function MainPage() {
         <div>식물의 판매점 연결</div>
         <div className="mainIcon">
           <BiStoreAlt size={50} />
-        </div>
+        </div> */}
       </div>
 
       <div className="mainRecommend">
-        <p className='bigString'>
+        <p className="bigString">
           <p>Plant</p>
           <p>Recommendation</p>
-
         </p>
         <ul>
           <li>
-            <p>질문지</p>
-            <p>선택</p>
+            <p className='mainTheme'>질문지 응답</p>
+            <p className='ThemeExplain'>보여드린 질문지를 선택하합니다</p>
           </li>
-          <BsArrowRightCircle color='#1E697A' size={30}/>
+          <BsArrowRightCircle color="#1E697A" size={100} />
           <li>
-            <p>개인별</p>
-            <p>환경설정</p>
+            <p className='mainTheme'>개인별 환경설정</p>
+            <p className='ThemeExplain'>질문지를 통해 개인별 환경을 설정합니다</p>
           </li>
-          <BsArrowRightCircle  color='#1E697A' size={30}/>
+          <BsArrowRightCircle color="#1E697A" size={100} />
 
           <li>
-            <p>식물</p>
-            <p>매칭</p>
+            <p className='mainTheme'>식물 매칭</p>
+            <p className='ThemeExplain'>개인별 환경과 가장 적합한 식물을 매칭합니다</p>
           </li>
-          <BsArrowRightCircle  color='#1E697A' size={30}/>
+          <BsArrowRightCircle color="#1E697A" size={100} />
 
           <li>
-            <p>식물</p>
-            <p>추천 완료</p>
+            <p className='mainTheme'>식물 추천 완료</p>
+            <p className='ThemeExplain'>~~~~~~~~~~~~~~</p>
+          </li>
+          <BsArrowRightCircle color="#1E697A" size={100} />
+
+          <li>
+            <p className='mainTheme'>사이트 연결</p>
+            <p className='ThemeExplain'></p>
           </li>
         </ul>
       </div>

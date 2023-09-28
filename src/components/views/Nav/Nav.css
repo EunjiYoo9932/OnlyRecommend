@@ -1,21 +1,31 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Nanum Gothic', sans-serif; */
+
 #nav{
     display: flex;
     justify-content: center;
-    margin: 10PX ;
-    font-family: 'Merriweather'
+    font-family: 'Nanum Gothic'
 }
 
 .nav-button{
     border: 1px solid #dadada;
-    margin: 15px 20px 10px 20px;
+    margin: 10px 17px 10px 17px;
     border-radius: 50px;
     width: 150px;
     height: 50px;
     font-weight: bold;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
+
+
 .nav-button:hover{
-    background-color: #1E697A;
+    background-color: #184914;
     box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .12);
     color: white;
 }
@@ -35,6 +45,7 @@
 
 .NavIconContainer{
     display: inline-block;
+    margin-right: 4px
 }
 /* #nav{
     text-decoration: none;

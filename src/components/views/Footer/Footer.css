@@ -1,7 +1,10 @@
 .footerExplain{
-    background-color: #008D8E;
-    padding: 20px 0;
-    height: '80px';
+    /* background-color: #184914; */
+    background-color: #2F4858;
+    background-color: #198754;
+    background-color: #C9E4C5;
+    padding: 10px 0;
+    
     flex-direction: row;
 
     display: flex;
