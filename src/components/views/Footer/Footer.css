@@ -3,6 +3,7 @@
     background-color: #2F4858;
     background-color: #198754;
     background-color: #C9E4C5;
+    background-color: white;
     padding: 10px 0;
     
     flex-direction: row;
@@ -14,6 +15,7 @@
 
 .footerJoongbu{
     color: white;
+    color: black;
     margin: 0;
     display: flex;
     flex-direction: column;

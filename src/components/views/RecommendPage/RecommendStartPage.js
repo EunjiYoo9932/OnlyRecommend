@@ -18,7 +18,7 @@ function RecommendStartPage() {
           {/* 아이콘을 감싸는 요소 */}
           <PiPottedPlantDuotone size={100} />
         </div>
-        <div>
+        <div className='recommendExplain'>
           <p>간단한 설문을 통해</p>
           <p>
             사용자의 주변 환경을 분석하여
@@ -28,7 +28,7 @@ function RecommendStartPage() {
           </p>
           </div>
         <button className="recommendStartButton" onClick={onSubmit}>
-          추천시작하기
+          Start
         </button>
       </div>
     </div>

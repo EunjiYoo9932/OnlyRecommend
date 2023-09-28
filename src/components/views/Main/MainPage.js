@@ -62,24 +62,24 @@ function MainPage() {
             <p className='mainTheme'>질문지 응답</p>
             <p className='ThemeExplain'>보여드린 질문지를 선택하합니다</p>
           </li>
-          <BsArrowRightCircle color="#1E697A" size={100} />
+          <BsArrowRightCircle color="#1E697A" size={150} />
           <li>
             <p className='mainTheme'>개인별 환경설정</p>
             <p className='ThemeExplain'>질문지를 통해 개인별 환경을 설정합니다</p>
           </li>
-          <BsArrowRightCircle color="#1E697A" size={100} />
+          <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>식물 매칭</p>
             <p className='ThemeExplain'>개인별 환경과 가장 적합한 식물을 매칭합니다</p>
           </li>
-          <BsArrowRightCircle color="#1E697A" size={100} />
+          <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>식물 추천 완료</p>
-            <p className='ThemeExplain'>~~~~~~~~~~~~~~</p>
+            <p className='ThemeExplain'>~~~~~~~~~~</p>
           </li>
-          <BsArrowRightCircle color="#1E697A" size={100} />
+          <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>사이트 연결</p>

@@ -1,17 +1,28 @@
 .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: #f7f7f9;
+    padding: 60px;    
     text-align: center;
     padding: 20px;
-  }
+    font-family: 'Nanum Gothic'
+}
   
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
+
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
 }
   
 .team-member {
-    background-color: #f2f8ff;
+    background-color: #F0FDEE;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

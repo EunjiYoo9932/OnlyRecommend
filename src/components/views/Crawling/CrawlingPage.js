@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CrawlingPage.css';
+import { PiMagnifyingGlassBold } from "react-icons/pi";
 
 function CrawlingPage() {
   const [searchKeyword, setSearchKeyword] = useState('');
@@ -34,40 +35,48 @@ function CrawlingPage() {
   };
 
   return (
-      <div className='crawlingResult'>
-        <form className='crawlingForm' onSubmit={onSubmit}>
-          <input
-              className='crawlingInput'
-              placeholder='찾으시는 식물을 입력해주세요!'
-              value={searchKeyword}
-              onChange={handleInputChange}
-          />
-          <input
-              className='crawlingButton'
-              type="submit"
-              value={isSearching ? "검색 중..." : "검색"}
-              disabled={isSearching}
-          />
-        </form>
+    <div className="crawlingResult">
+      <form className="crawlingForm" onSubmit={onSubmit}>
+        <input
+          className="crawlingInput"
+          placeholder="찾으시는 식물을 입력해주세요!"
+          value={searchKeyword}
+          onChange={handleInputChange}
+        />
 
-        {/* 검색 결과를 표시 */}
-        {entities.length > 0 && !isSearching && (
-            <div className="entity-list">
-              {entities.map((entity, index) => (
-                  <div className="entity" key={index}>
-                    <a href={entity.storeLink}>
-                      <img className="entity-image" src={entity.imgUrl} alt={entity.storeName} />
-                    </a>
-                    <div className="entity-content">
-                      <h5>{entity.storeName}</h5>
-                      <h5>{entity.storeTitle}</h5>
-                      <p>가격: {entity.price}</p>
-                    </div>
-                  </div>
-              ))}
+        <label className="input-label">
+          <PiMagnifyingGlassBold />
+          <input
+            className="crawlingButton"
+            type="submit"
+            value={isSearching ? "검색 중..." : "검색하기"}
+            disabled={isSearching}
+          />
+        </label>
+      </form>
+
+      {/* 검색 결과를 표시 */}
+      {entities.length > 0 && !isSearching && (
+        <div className="entity-list">
+          {entities.map((entity, index) => (
+            <div className="entity" key={index}>
+              <a href={entity.storeLink}>
+                <img
+                  className="entity-image"
+                  src={entity.imgUrl}
+                  alt={entity.storeName}
+                />
+              </a>
+              <div className="entity-content">
+                <h5>{entity.storeName}</h5>
+                <h5>{entity.storeTitle}</h5>
+                <p>가격: {entity.price}</p>
+              </div>
             </div>
-        )}
-      </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 

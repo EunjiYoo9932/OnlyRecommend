@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./IntroducePage.css";
 import { BsGithub } from 'react-icons/bs';
+import { BsFillPersonFill } from 'react-icons/bs';
 function Introduce() {
   const teamMembers = [
     {
@@ -29,8 +30,10 @@ function Introduce() {
     <div className="team-container">
 
       <div className="team-grid">
+      
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
+            <BsFillPersonFill size={25} />
             <h2>{member.name}</h2>
             <p>{member.role}</p>
             <a href={member.github} target="_blank" rel="noopener noreferrer">

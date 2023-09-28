@@ -143,6 +143,125 @@
     {
       "searchKeyword": "ㅇㄹㄴㅁ",
       "id": 26
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -4,
+      "answerWater": 1.7,
+      "id": 27
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 28
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 29
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 30
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 29,
+      "answerWater": 2.2,
+      "id": 31
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 31,
+      "answerWater": 2.2,
+      "id": 32
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 33,
+      "answerWater": 2.2,
+      "id": 33
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 31,
+      "answerWater": 2.2,
+      "id": 34
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 4,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 35
+    },
+    {
+      "answerLevel": 2.9,
+      "answerLight": 4.4,
+      "answerTemperature": 20,
+      "answerWater": 2.9,
+      "id": 36
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 37
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -4,
+      "answerWater": 1.7,
+      "id": 38
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 39
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 40
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 41
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 42
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -4,
+      "answerWater": 1.7,
+      "id": 43
     }
   ],
   "plantsData": [

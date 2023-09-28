@@ -1,17 +1,38 @@
-.recommendResultul{
-    list-style: none;
-    padding: 0;
+.recommendResult{
+    background-color: white;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    border-radius: 15px;
+}
 
+
+.recommendResultul{
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}
+
+.recommendResultul p{
+    font-size: 25px;
 }
 .recommendResultli{
-
+    margin: 5px;
 }
 .recommendResultWi{
-    font-size: 20px;
-    color: #c0eb75;
+    font-size: 24px;
+    color: #184914;
+}
+
+.recommendResultRanking{
+    margin-bottom: 10px;
+    
+    font-size: 18px;
 }
 .recommendResultRanking:active{
     text-decoration: underline;
@@ -19,11 +40,31 @@
 .recommendResultButton{
     margin-top: 10px;
     width: 30%;
+    background-color: #184914;
+    color: white;
+}
+
+.recommendResultButton {
+    background-color: #C9E4C5;
+    
+    margin: 20px;
+    padding: 13px;
+    border-style: none;
+    border-radius: 50px;
+
+    font-size: 20px;
+    width: 20%;
+}
+
+.recommendResultButton:hover{
+    background-color: #F0FDEE;
+    background-color: #C9E4C5;
+    border: none;
+    font-weight: bold;
 }
 .recommendResultModal{
     display: flex;
     width: 60%;
-    max-height: 80%;
     margin: auto;
     padding: 20px; /* 내용과 모달 경계 간격 조절 */
     box-sizing: border-box;
@@ -38,8 +79,11 @@
 }
 
 .modalCloseButton{
-    max-width: 50%;
-    margin-bottom: 20px;
+    margin: 10px;
+    width: 30%;
+    background-color: #184914;
+    color: white;
+    border-radius: 15px;
 }
 
 .plantExplain{
@@ -48,7 +92,19 @@
     padding-left: 0;
 }
 
+.plantExplainName{
+    font-size: 21px;
+}
+
+.plantExplainImg{
+    margin: 6px 0;
+}
 .plantExplainTitle{
-    color: #c0eb75;
-    font-size: 25px;
+    color: #C9E4C5;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.plantExplainList{
+    margin-bottom: 5px;
 }
