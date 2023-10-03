@@ -23,9 +23,9 @@ function MainPage() {
         {/* <div className='mainRecommend'> */}
         <p>몇가지 응답을 통해</p>
         <p>당신의 생활환경과 관심사에 맞춰 최적화된 식물을 찾아드립니다 </p>
-        <p>반려 식물이 집안이나 사무실 분위기를 더 활기차게 만들어 주어</p>
+        <p>반려 식물을 통해 집안이나 사무실 분위기를 더 활기차게 바뀌며</p>
         <p>일상에 건강하고 긍정적인 영향을 드립니다</p>
-        <p>이제 새로운 반려식물을 찾아드립니다</p>
+        <p>이제 당신에게 알맞는 새로운 반려식물을 추천해드립니다</p>
         <PiPlant size={50} color="3E4A3D" />
         {/* <div>간단한 설문조사로 식물 육성 환경/주변 환경과 취향 분석</div>
 
@@ -60,30 +60,32 @@ function MainPage() {
         <ul>
           <li>
             <p className='mainTheme'>질문지 응답</p>
-            <p className='ThemeExplain'>보여드린 질문지를 선택하합니다</p>
+            <p className='ThemeExplain'>몇 가지 질문을 통해 식물 선택에 필요한 정보를 수집</p>
           </li>
           <BsArrowRightCircle color="#1E697A" size={150} />
           <li>
             <p className='mainTheme'>개인별 환경설정</p>
-            <p className='ThemeExplain'>질문지를 통해 개인별 환경을 설정합니다</p>
+            <p className='ThemeExplain'>제공한 정보를 기반으로 개인별 환경설정을 수행</p>
           </li>
           <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>식물 매칭</p>
-            <p className='ThemeExplain'>개인별 환경과 가장 적합한 식물을 매칭합니다</p>
+            <p className='ThemeExplain'>개인별 환경설정을 기반으로 적합한 식물을 매칭</p>
           </li>
           <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>식물 추천 완료</p>
-            <p className='ThemeExplain'>~~~~~~~~~~</p>
+            <p className='ThemeExplain'>식물에 관한 정보를 제공</p>
+            <p className='ThemeExplain'>이 정보에는 식물의 이름, 특징, 관리 방법, 주의사항 등이 포함</p>
+
           </li>
           <BsArrowRightCircle color="#1E697A" size={150} />
 
           <li>
             <p className='mainTheme'>사이트 연결</p>
-            <p className='ThemeExplain'></p>
+            <p className='ThemeExplain'>식물을 구매할 수 있는 온라인 사이트 링크를 제공</p>
           </li>
         </ul>
       </div>

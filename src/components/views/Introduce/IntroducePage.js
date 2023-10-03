@@ -33,7 +33,7 @@ function Introduce() {
       
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
-            <BsFillPersonFill size={25} />
+            <BsFillPersonFill size={45} />
             <h2>{member.name}</h2>
             <p>{member.role}</p>
             <a href={member.github} target="_blank" rel="noopener noreferrer">

@@ -61,8 +61,6 @@
     align-items: center;
     list-style: none;
     display: flex;
-
-
 }
 
 .mainRecommend li{
@@ -74,7 +72,7 @@
     font-family: 'Nanum Gothic';
     background-color: white;
     color: #3E4A3D;
-    ;
+    border: #f7f7f9 solid 1px;
 }
 .mainTheme{
     padding: 11px;
@@ -84,6 +82,7 @@
 .ThemeExplain{
     font-size: 18px;
     padding: 0 5px;
+    margin: 0;
 }
 /* .mainRecommend li:nth-child(1){
 
