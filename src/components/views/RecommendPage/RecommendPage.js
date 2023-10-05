@@ -4,6 +4,7 @@ import axios from "axios";
 import "./RecommendPage.css";
 import { useNavigate } from "react-router-dom";
 
+import { TbLeaf } from "react-icons/tb";
 function RecommendPage() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const navigate = useNavigate();
@@ -55,6 +56,22 @@ function RecommendPage() {
     <div className="recommend">
       <div className="recommendMain">
         <div className="questionNumber"> Q.{currentQuestionIndex + 1}</div>
+        <div className="questionState">
+          <div className="NavIconContainer">
+            {[...Array(8)].map((_, index) => (
+              <TbLeaf
+                key={index}
+                size={35}
+                style={{
+                  color:
+                    index <= currentQuestionIndex
+                      ? 'green' // 현재 질문 인덱스까지는 그린색으로 표시
+                      : '#bab9b9', 
+                }}
+              />
+            ))}
+          </div>
+        </div>
         <div className="recommendQuestion">{currentQuestion}</div>
 
         <ul className="recommendAnswerList">

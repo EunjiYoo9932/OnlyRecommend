@@ -297,6 +297,90 @@
       "answerTemperature": 5,
       "answerWater": 2.2,
       "id": 48
+    },
+    {
+      "answerLevel": 0.19999999999999996,
+      "answerLight": 4.3999999999999995,
+      "answerTemperature": 5,
+      "answerWater": 2.2,
+      "id": 49
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 50
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 5,
+      "answerTemperature": 29,
+      "answerWater": 2.2,
+      "id": 51
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -4,
+      "answerWater": 1.7,
+      "id": 52
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 53
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -4,
+      "answerWater": 1.7,
+      "id": 54
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 55
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 56
+    },
+    {
+      "answerLevel": 1.7,
+      "answerLight": 1.6,
+      "answerTemperature": -6,
+      "answerWater": 1.7,
+      "id": 57
+    },
+    {
+      "answerLevel": 0.9,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": 10,
+      "answerWater": 0.9,
+      "id": 58
+    },
+    {
+      "answerLevel": 1.9,
+      "answerLight": 0.8,
+      "answerTemperature": 5,
+      "answerWater": 1.9,
+      "id": 59
+    },
+    {
+      "answerLevel": 2.2,
+      "answerLight": 4,
+      "answerTemperature": 27,
+      "answerWater": 2.2,
+      "id": 60
     }
   ],
   "plantsData": [

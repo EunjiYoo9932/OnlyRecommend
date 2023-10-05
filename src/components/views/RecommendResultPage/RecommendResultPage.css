@@ -34,8 +34,9 @@
     
     font-size: 18px;
 }
-.recommendResultRanking:active{
+.recommendResultRanking:hover{
     text-decoration: underline;
+    font-weight: bold;
 }
 .recommendResultButton{
     margin-top: 10px;

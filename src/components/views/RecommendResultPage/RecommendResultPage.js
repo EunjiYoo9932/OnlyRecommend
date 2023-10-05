@@ -117,7 +117,7 @@ function RecommendResultPage() {
         ))}
         <button
           className="recommendResultButton"
-          onClick={() => navigate("/RecommendPage")}
+          onClick={() => navigate("/RecommendStartPage")}
         >
           첫페이지로
         </button>
@@ -151,11 +151,11 @@ function RecommendResultPage() {
                   <li className='plantExplainList'>{plant.plantsEffect}</li>
                   <li className="plantExplainTitle">주의점</li>
                   <li className='plantExplainList'>{plant.plantsNotice}</li>
-                  {/*<input className='crawlingButton'*/}
-                  {/*       type="submit"*/}
-                  {/*       onClick={onSubmit}*/}
-                  {/*/>*/}
-                  {/*<button className='resultCrawlingButton' onClick={resultCrawling(plant.plantsName)}>판매정보 보기</button>*/}
+                  {/* <input className='crawlingButton'
+                        type="submit"
+                        onClick={onSubmit}
+                  />
+                  <button className='resultCrawlingButton' onClick={resultCrawling(plant.plantsName)}>판매정보 보기</button> */}
                 </ul>
               </div>
             );
