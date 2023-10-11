@@ -293,7 +293,7 @@ function RecommendResultPage() {
         })}
 
         <button className="recommendResultButton" onClick={closeModal}>
-          close
+          닫기
         </button>
       </Modal>
     </div>
