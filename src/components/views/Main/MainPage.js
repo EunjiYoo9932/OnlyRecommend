@@ -78,7 +78,7 @@ function MainPage() {
           <li>
             <p className='mainTheme'>식물 추천 완료</p>
             <p className='ThemeExplain'>식물에 관한 정보를 제공</p>
-            <p className='ThemeExplain'>이 정보에는 식물의 이름, 특징, 관리 방법, 주의사항 등이 포함</p>
+            
 
           </li>
           <BsArrowRightCircle color="#1E697A" size={150} />

@@ -29,7 +29,7 @@ function Nav() {
         </button>
       </Link>
       
-      <Link to="/CrawlingPage" className="link-style">
+      <Link to="/CrawlingStartPage" className="link-style">
         <button className="nav-button">
         <div className="NavIconContainer">
             {/* 아이콘을 감싸는 요소 */}

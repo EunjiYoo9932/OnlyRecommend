@@ -67,6 +67,14 @@ const qnaList = [
             { answer: '남부 지역입니다', 'answerTemperature' : 2, type: [] },
         ]
     },
+    {
+        q: '저녁은 일주일에 몇 번 정도 집에서 먹나요?',
+        a: [
+            { answer: '0~2일 먹습니다', 'answerWater' : -3.5, 'answerLevel' : -3, type: [] },
+            { answer: '3~4일 먹습니다', 'answerWater' : 0, 'answerLevel' : 0, type: [] },
+            { answer: '5일 이상 먹습니다', 'answerWater' : 3.5, 'answerLevel' : 3, type: [] },
+        ]
+    },
 ]
 
 export default qnaList;    

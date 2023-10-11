@@ -27,16 +27,16 @@ function Introduce() {
   ];
 
   return (
-    <div className="team-container">
+    <div className="recommendStart">
 
-      <div className="team-grid">
+      <div className="recommendStartMain2">
       
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
             <BsFillPersonFill size={45} />
             <h2>{member.name}</h2>
             <p>{member.role}</p>
-            <a href={member.github} target="_blank" rel="noopener noreferrer">
+            <a href={member.github} target="_blank" rel="github">
               GitHub 
               <BsGithub/>
             </a>

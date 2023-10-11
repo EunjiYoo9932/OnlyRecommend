@@ -1,28 +1,18 @@
-.team-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 50px;
-    background-color: #f7f7f9;
-    padding: 60px;    
-    text-align: center;
-    padding: 20px;
-    font-family: 'Nanum Gothic'
-}
-  
-.team-grid {
-
+.recommendStartMain2 {
     background-color: white;
     margin: 20px;
-    display: flex;
+
+    flex-direction: column;
     align-items: center;
     width: 90%;
     border-radius: 15px;
-    justify-content: center;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2개의 열을 가진 그리드 레이아웃을 정의합니다. */
+    gap: 20px;
+    /* 그리드 아이템 간의 간격을 조정합니다. */
 }
-  
+
 .team-member {
     background-color: #F0FDEE;
     padding: 20px;
@@ -33,27 +23,28 @@
     overflow: hidden;
     margin: 20px;
 }
-  
+
 .team-member h2 {
     margin-top: 0;
     color: #333;
     margin: 5px;
 }
-  
+
 .team-member p {
     color: #555;
     margin: 0;
     font-size: 21px;
 }
-  
+
 .team-member a {
     color: #c0eb75;
     text-decoration: none;
     font-weight: bold;
-    
+
     font-size: 21px;
 }
-.IntroduceJOONGBUImg{
+
+.IntroduceJOONGBUImg {
     text-align: center;
     position: relative;
 
