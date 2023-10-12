@@ -1011,6 +1011,13 @@
       "answerTemperature": 27,
       "answerWater": 5.7,
       "id": 150
+    },
+    {
+      "answerLevel": 4.7,
+      "answerLight": 0.6000000000000001,
+      "answerTemperature": -4,
+      "answerWater": 5.2,
+      "id": 151
     }
   ],
   "plantsData": [

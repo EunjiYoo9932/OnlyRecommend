@@ -11,10 +11,17 @@
 
 
 
-.recommendResultHeader{
+.recommendResultHeader1{
     margin: 30px 0 0 0;
     font-size: 30px;
 }
+
+.recommendResultHeader{
+    font-size: 30px;
+    border-top: 2px solid #adadad;
+    padding: 26px 120px 5px 120px;
+}
+
 .soulMatePlants {
     background-color: #276b21;
     color: white;

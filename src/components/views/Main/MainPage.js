@@ -1,11 +1,7 @@
 import React from "react";
-import { ReactComponent as Ball } from "../../../assets/images/ball.svg";
-import { GiArchiveResearch } from "react-icons/gi";
 import { PiPlant } from "react-icons/pi";
-import { BiStoreAlt } from "react-icons/bi";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-import { ReactComponent as Ball2 } from "../../../assets/images/ball2.svg";
 import "./MainPage.css";
 function MainPage() {
   return (
@@ -13,43 +9,13 @@ function MainPage() {
       <img className="mainImg" alt="mainImg" src="image/메인사진.png" />
 
       <div className="bigString">ABOUT</div>
-
-      {/* <Ball width='100' fill="#2CAF92"/>
-      <Ball2 width='1500px' fill="#72D086"/>
-
-      
-      <Ball fill="#72D086"/> */}
       <div className="mainExplain">
-        {/* <div className='mainRecommend'> */}
         <p>몇가지 응답을 통해</p>
         <p>당신의 생활환경과 관심사에 맞춰 최적화된 식물을 찾아드립니다 </p>
         <p>반려 식물을 통해 집안이나 사무실 분위기를 더 활기차게 바뀌며</p>
         <p>일상에 건강하고 긍정적인 영향을 드립니다</p>
-        <p>이제 당신에게 알맞는 새로운 반려식물을 추천해드립니다</p>
+        <p>이제 당신에게 알맞는 새로운 반려식물을 추천해드리겠습니다</p>
         <PiPlant size={50} color="3E4A3D" />
-        {/* <div>간단한 설문조사로 식물 육성 환경/주변 환경과 취향 분석</div>
-
-        <div className="mainIcon">
-          <GiArchiveResearch size={50} />
-        </div>
-
-        <p>2</p>
-        <div>답안을 바탕으로 가장 어울리는 가상의 식물 생성</div>
-        <div className="mainIcon">
-          <PiPlant size={50} />
-        </div>
-
-        <p>3</p>
-        <div>grup 고유의 식물 사전에서 꿈의 식물과 가장 비슷한 식물 추천</div>
-        <div className="mainIcon">
-          <PiPlant size={50} />
-        </div>
-
-        <p>4</p>
-        <div>식물의 판매점 연결</div>
-        <div className="mainIcon">
-          <BiStoreAlt size={50} />
-        </div> */}
       </div>
 
       <div className="mainRecommend">

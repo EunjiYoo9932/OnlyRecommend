@@ -70,40 +70,40 @@ function RecommendResultPage() {
   }, []);
 
   function getTemperatureText(temperature) {
-    return `식물이 좋아하는 온도는 ${temperature}도입니다.`;
+    return `식물이 좋아하는 온도는 ${temperature}도입니다`;
   }
 
   function getLightText(light) {
     if (light >= 31) {
-      return "해를 매우 좋아하는 식물입니다.";
+      return "해를 매우 좋아하는 식물입니다";
     } else if (light >= 21) {
-      return "해를 좋아합니다.";
+      return "해를 좋아합니다";
     } else if (light >= 11) {
       return "직사광선을 좋아하지 않습니다";
     } else {
-      return "해가 들지 않아도 잘 자랍니다.";
+      return "해가 들지 않아도 잘 자랍니다";
     }
   }
 
   function getWaterText(water) {
     if (water >= 31) {
-      return "겉흙이 마르면 물을 듬뿍 줘야 합니다.";
+      return "겉흙이 마르면 물을 듬뿍 줘야 합니다";
     } else if (water >= 21) {
-      return "흙을 축축하게 유지해 줘야 합니다.";
+      return "흙을 축축하게 유지해 줘야 합니다";
     } else if (water >= 11) {
-      return "흙을 촉촉하게 유지해 줘야 합니다.";
+      return "흙을 촉촉하게 유지해 줘야 합니다";
     } else {
-      return "건조에 강합니다. 흙이 바짝 말랐을때 물을 줘야 합니다.";
+      return "건조에 강합니다. 흙이 바짝 말랐을때 물을 줘야 합니다";
     }
   }
 
   function getLevelText(level) {
     if (level >= 28) {
-      return "키우기 어려운 식물입니다.";
+      return "키우기 어려운 식물입니다";
     } else if (level >= 14) {
-      return "초보자는 키우기 어렵습니다.";
+      return "초보자는 키우기 어렵습니다";
     } else {
-      return "누구나 키우기 쉽습니다.";
+      return "누구나 키우기 쉽습니다";
     }
   }
 
@@ -155,7 +155,7 @@ function RecommendResultPage() {
   return (
     <div className="recommend">
       <div className="recommendResult">
-        <div className="recommendResultHeader">
+        <div className="recommendResultHeader1">
           <span>나의</span>
           <span className="soulMatePlants">반려식물</span>
           <span>은?</span>
